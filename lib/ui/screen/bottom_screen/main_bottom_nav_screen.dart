@@ -28,7 +28,7 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
       bottomNavigationBar: NavigationBar(
         selectedIndex: _selectIndex,
         onDestinationSelected: (int index){
-          _selectIndex =index;
+          _selectIndex = index;
           setState(() {
 
           });

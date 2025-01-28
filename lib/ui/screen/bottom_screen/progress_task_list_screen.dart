@@ -94,7 +94,6 @@ class _ProgressTaskListScreenState extends State<ProgressTaskListScreen> {
   Future<void> _updateTaskStatus(String taskId, String newStatus) async {
     final String url = Urls.updateTaskUrl(taskId, newStatus);
     final NetworkResponse response = await NetworkCaller.getRequest(url: url);
-
     if (response.isSuccess) {
       _fetchAllData();
       showSnackBarMessage(context, 'task status updated successfully');
@@ -102,7 +101,6 @@ class _ProgressTaskListScreenState extends State<ProgressTaskListScreen> {
       showSnackBarMessage(context, response.errorMessage);
     }
   }
-
 
 
   Future<void> _getProgressTaskList() async {

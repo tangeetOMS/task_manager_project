@@ -33,7 +33,7 @@ class TaskItems extends StatelessWidget {
       case 'Completed':
         statusColor = Colors.green;
         break;
-      case 'Canceled':
+      case 'Cancelled':
         statusColor = Colors.red;
         break;
       default:
