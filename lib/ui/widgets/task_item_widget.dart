@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../data/models/task_list_model.dart';
 
 class TaskItems extends StatelessWidget {
@@ -171,7 +170,8 @@ class TaskItems extends StatelessWidget {
                 onChanged: (value) {
                   setState(() {
                     selectedStatus = value;
-                  });
+                    },
+                  );
                 },
               ),
               actions: [
