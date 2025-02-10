@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:task_manager/data/services/network_caller.dart';
@@ -205,7 +204,7 @@ class _UpdateProfileScreenState extends State<UpdateProfileScreen> {
 
   Future<void> _pickImage()async{
     ImagePicker picker = ImagePicker();
-  XFile? image = await picker.pickImage(source: ImageSource.camera);
+  XFile? image = await picker.pickImage(source: ImageSource.gallery);
     if(image != null){
       pickedImage = image;
       setState(() {});
